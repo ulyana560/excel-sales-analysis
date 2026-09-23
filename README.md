@@ -21,19 +21,21 @@ The analysis aims to answer the following questions:
 
 ## Dataset
 
-The dataset contains **9,995 rows and 21 columns**.
+The dataset contains 9,995 rows and 21 columns. Each row represents a sales transaction.
 
-The data includes information related to:
+The dataset includes information about:
 
-- Orders
-- Products
-- Categories
+- Order and shipping dates
+- Shipping mode
+- Customer information
+- Customer segment
+- Geographic information
+- Product information
+- Product categories and sub-categories
 - Sales
-- Profit
 - Quantity
 - Discount
-- Regions
-- Dates
+- Profit
 
 ### Data Quality Check
 
@@ -49,6 +51,26 @@ The dataset was checked before performing the analysis:
 The dataset did not contain missing values or duplicate rows.
 
 ## Data Cleaning
+
+Before starting the analysis, the dataset was checked and prepared for further calculations.
+
+The following steps were performed:
+
+- Checked the dataset structure and data types
+- Converted `Order Date` and `Ship Date` from text to date format
+- Converted `Sales`, `Quantity`, `Discount`, and `Profit` from text to numeric format
+- Checked for missing values
+- Checked for duplicate rows
+- Prepared the cleaned data for further calculations and analysis
+
+### Data Quality Check
+
+| Check | Result |
+|---|---:|
+| Number of rows | 9,995 |
+| Number of columns | 21 |
+| Missing values | 0 |
+| Duplicate rows | 0 |## Data Cleaning
 
 The following steps were performed before the analysis:
 
@@ -153,42 +175,25 @@ These visualizations make it easier to compare category performance and identify
 
 ## Key Findings
 
-### 1. Technology is the largest sales category
+Looking at the results, I can see that the company's sales increased during the analyzed period. There was a small decrease in 2015, but after that sales started to grow and reached the highest level in 2017. Compared with 2014, the sales in 2017 were noticeably higher.
 
-Technology generated approximately **836.2 thousand** in sales, making it the category with the highest sales in the dataset.
+When looking at the categories, Technology has the highest sales and profit. Office Supplies also has a good result, especially when looking at the profit margin. Furniture has quite high sales as well, but the profit is much lower and the profit margin is only around 2%.
 
-It also generated the highest total profit, at approximately **145.5 thousand**.
+This shows that having high sales does not always mean having high profit. It would be interesting to look deeper into the Furniture category and understand why the company earns much less from it.
 
-### 2. Furniture has a low profit margin
+The Top 10 analysis also shows that some products generate much higher sales than others. The highest-selling product is the Canon imageCLASS 2200 Advanced Copier, with around 61.6K in sales.
 
-Furniture generated approximately **742.0 thousand** in sales but only approximately **18.5 thousand** in profit.
-
-Its profit margin was approximately **2%**, substantially lower than the 17% margin recorded for Office Supplies and Technology.
-
-This suggests that high sales volume does not necessarily translate into high profitability.
-
-### 3. Sales increased significantly after 2015
-
-Sales decreased slightly in 2015 compared with 2014.
-
-However, sales increased strongly in 2016 and reached the highest level in 2017.
-
-### 4. A small number of products generate relatively high sales
-
-The Top 10 analysis shows that several individual products generate substantially higher sales than other products in the dataset.
-
-The Canon imageCLASS 2200 Advanced Copier was the highest-sales product, generating approximately 61.6 thousand in sales.
+It would also be interesting to analyze more recent data and check if these trends continued after 2017.
 
 ## Business Recommendations
 
-Based on the analysis, several areas could be investigated further:
+Based on the results, I think it would be useful to:
 
-- Analyze the reasons behind the low profit margin in the Furniture category.
-- Investigate pricing, discount levels, and costs associated with Furniture products.
-- Maintain focus on high-performing Technology products while monitoring their profitability.
-- Identify characteristics of the highest-sales products that could be applied to other products.
-- Continue monitoring the strong sales growth observed in 2016 and 2017.
-- Perform a deeper analysis of discounts to understand their relationship with sales and profit.
+- Check why the Furniture category has such a low profit margin.
+- Look at discounts and prices to see if they affect the profit.
+- Take a closer look at the products with the highest sales.
+- Continue monitoring the sales growth in the following years.
+- Analyze more recent data to see if the same trends are still present.
 
 ## Tools
 
@@ -201,10 +206,8 @@ Based on the analysis, several areas could be investigated further:
 
 ## Conclusion
 
-This project demonstrates how Microsoft Excel can be used to transform raw sales data into meaningful business insights.
+This project helped me analyze sales data and better understand the company's sales and profit performance.
 
-The analysis covers overall sales performance, product performance, category profitability, and sales trends over time.
+I found that sales increased over the analyzed period, especially in 2016 and 2017. Technology had the highest sales and profit, while Furniture had a much lower profit margin despite having relatively high sales.
 
-The results show that sales volume and profitability can differ significantly across categories. In particular, Technology generated the highest sales and profit, while Furniture had a considerably lower profit margin.
-
-The project also demonstrates practical Excel skills including data validation, aggregation, dynamic formulas, sorting, filtering, and visualization.
+The project also helped me practice Excel skills such as data cleaning, formulas, sorting, filtering, data aggregation, and creating charts.
