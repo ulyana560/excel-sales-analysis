@@ -19,6 +19,11 @@ The analysis aims to answer the following questions:
 - What are the main sales trends?
 - Which areas may require further business attention?
 
+## Files
+
+- `data/` — information about the original dataset and its source.
+- `analysis/` — Excel file containing the cleaned data, calculations, analysis and visualizations.
+
 ## Dataset
 
 The dataset contains 9,995 rows and 21 columns. Each row represents a sales transaction.
